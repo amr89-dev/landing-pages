@@ -11,7 +11,7 @@
   --second-font: "Roboto", sans-serif;
   --max-width: 1024px;
   --header-heigth: 4rem;
-  --hero-image-main: url("/nova-music/assets/HeroImage-raw.png");
+  --hero-image-main: url("/landing-pages/nova-music/assets/HeroImage-raw.png");
   --attachment-main: fixed;
   --opacity-color-main: rgba(0, 0, 0, 0.65);
 }
