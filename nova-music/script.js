@@ -21,7 +21,7 @@
 ((d) => {
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),
-    $response = d.querySelector(".contact-response");
+    $response = d.querySelector(".contact-form-response");
 
   $form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -39,7 +39,7 @@
       })
       .catch((err) => {
         console.log(err);
-        let message = err.statusText || "Ocurrio un erro";
+        let message = err.statusText || "Ocurrio un error";
         $response.querySelector(
           "h3"
         ).innerHTML = `Error: ${err.status}: ${message}`;
