@@ -52,3 +52,19 @@
       });
   });
 })(document);
+
+/****header */
+
+const d = document,
+  w = window;
+$header = d.querySelector(".header");
+
+w.addEventListener("scroll", (e) => {
+  let scrollTop = w.scrollY || d.documentElement.scrollTop;
+  console.log(scrollTop);
+  if (scrollTop > 1) {
+    $header.classList.remove("bg-transparent");
+  } else {
+    $header.classList.add("bg-transparent");
+  }
+});
