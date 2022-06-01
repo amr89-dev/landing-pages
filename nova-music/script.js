@@ -52,7 +52,6 @@
       });
   });
 })(document);
-
 /****header */
 
 const d = document,
@@ -63,8 +62,8 @@ w.addEventListener("scroll", (e) => {
   let scrollTop = w.scrollY || d.documentElement.scrollTop;
   console.log(scrollTop);
   if (scrollTop > 1) {
-    $header.classList.remove("bg-transparent");
+    $header.classList.add("bg-color");
   } else {
-    $header.classList.add("bg-transparent");
+    $header.classList.remove("bg-color");
   }
 });
