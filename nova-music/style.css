@@ -11,7 +11,7 @@
   --second-font: "Roboto", sans-serif;
   --max-width: 1024px;
   --header-heigth: 4rem;
-  --hero-image-main: url("/landing-pages/nova-music/assets/HeroImage-raw.png");
+  --hero-image-main: url("assets/HeroImage-raw.png");
   --attachment-main: fixed;
   --opacity-color-main: rgba(0, 0, 0, 0.65);
 }
@@ -282,7 +282,11 @@ p {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -424,13 +428,16 @@ p {
 }
 
 @media screen and (min-width: 1080px) {
-  .about {
+  .about-grid {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-between;
     align-content: center;
   }
-
+  .about-text {
+    align-self: start;
+    text-align: justify;
+  }
   .contact-cards {
     grid-template-columns: repeat(4, 24%);
   }
