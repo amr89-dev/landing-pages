@@ -357,7 +357,7 @@ p {
   }
   .about .about-grid .about-avatar img {
     min-width: 90%;
-    height: auto;
+    height: 75vh;
     border: thin solid black;
   }
   .about .about-grid .about-info {
