@@ -92,6 +92,28 @@ p {
   display: none;
 }
 
+.text-center {
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 243, 184, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.modal#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 .section {
   position: relative;
   left: 0px;
@@ -414,6 +436,7 @@ p {
 }
 .contact .contact-form textarea {
   height: 15rem;
+  font-family: inherit;
 }
 .contact .contact-form input,
 .contact .contact-form textarea {
