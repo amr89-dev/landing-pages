@@ -132,6 +132,10 @@ p {
   background-size: 9px 9px;
 }
 
+.object-svg {
+  width: 1rem;
+}
+
 /*-------------------------SITE STYLES----------------------------------*/
 /****** HEADER ******/
 .header {
