@@ -3,6 +3,7 @@
     $navMenu = d.querySelector(".nav-menu");
 
   $navBtn.addEventListener("click", (e) => {
+    console.log($navBtn);
     $navBtn.firstElementChild.classList.toggle("none");
     $navBtn.lastElementChild.classList.toggle("none");
     $navMenu.classList.toggle("is-active");
